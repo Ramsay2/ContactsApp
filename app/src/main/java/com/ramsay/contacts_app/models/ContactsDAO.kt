@@ -15,4 +15,7 @@ interface ContactsDAO {
 
     @Update
     fun updateContactOfDB(contacts: Contacts)
+
+    @Query("DELETE FROM contacts")
+    fun deleteContact()
 }
