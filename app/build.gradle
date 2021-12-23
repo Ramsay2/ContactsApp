@@ -38,19 +38,8 @@ android {
 
 dependencies {
 
-
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    kapt 'com.github.bumptech.glide:compiler:4.12.0'
-
     // ViewModel and LiveData
-    def arch_version = '2.2.0-alpha01'
-    implementation("com.airbnb.android:lottie:4.1.0")
 
-    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
     // Lifecycle
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
@@ -68,28 +57,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Room
-    implementation 'androidx.room:room-ktx:2.3.0'
-    kapt 'androidx.room:room-compiler:2.3.0'
-
-    //Retrofit
-    def retrofit2_version = "2.9.0"
-    def okhttp3_version = "4.9.0"
-//retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_version"
-
-//Okhttp3
-    implementation "com.squareup.okhttp3:okhttp:$okhttp3_version"
+    implementation 'androidx.room:room-ktx:2.4.0'
+    kapt 'androidx.room:room-compiler:2.4.0'
 
     //hilt
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
 
     // simple runtime permissions
-
-
     //paging
-    def paging_version = "3.1.0-alpha03"
-    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+   // def paging_version = "3.1.0-alpha03"
+    implementation "androidx.paging:paging-runtime-ktx:3.1.0"
     implementation 'com.karumi:dexter:6.2.3'
 }
