@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "contacts")
 data class Contacts(
-
     @ColumnInfo(name = "name")
     var contactName: String,
     @ColumnInfo(name = "number")
